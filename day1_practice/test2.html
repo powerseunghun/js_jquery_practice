@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="utf-8">
     <title>test2</title>
     <script type="text/javascript">
-      document.write("welcome!");
+      var name = prompt("What's your name?", "");
+      var height = prompt("How tall are you?", "0");
+      var weight = prompt("How much do you weight?", "0");
+
+      var recommend_weight = (height - 100) * 0.9;
+      var result = weight >= recommend_weight - 5 && weight <= recommend_weight + 5;
+      result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+
+      document.write(name + "님은 " + result);
     </script>
   </head>
   <body>

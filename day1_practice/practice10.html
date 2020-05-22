@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice10</title>
+    <script type="text/javascript">
+      var a = 10;
+      var b = 20;
+      var m = 30;
+      var n = 40;
+
+      var result;
+      result = a > b || b >= m || m > n; // false || false || false = false
+      document.write(result, "<br>");
+
+      result = a > b || b >= m || m <= n; // false || false || true = true
+      document.write(result, "<br>");
+
+      result = a <= b && b >= m && m <= n; // true && false && true = false
+      document.write(result, "<br>");
+
+      result = a <= b && b <= m && m <= n; // true && true && true = true
+      document.write(result, "<br>");
+
+      result = !(a > b); // !false = true
+      document.write(result, "<br>");
+
+      var n1 = 10;
+      var n2 = 3;
+
+      var result = n1 > n2 ? "javascript" : "hello";
+      document.write(result, "<br>");
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
