@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice4</title>
+    <script type="text/javascript">
+      var id = "easy1004";
+      var pw = "112233";
+
+      var user_id = prompt("what's your id?");
+      var user_pw = prompt("what's your pwd?");
+
+      if (id == user_id) {
+        if (pw == user_pw) {
+          document.write(user_id + ". Hello!");
+        }
+        else {
+          alert("not correct pwd");
+          location.reload();
+        }
+      }
+      else {
+        alert("not correct id");
+        location.reload();
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
