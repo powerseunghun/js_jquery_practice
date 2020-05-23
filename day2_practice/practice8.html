@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice8</title>
+    <style>
+      .red {
+        color: red;
+      }
+      .green {
+        color: green;
+      }
+      .aqua {
+        color: aqua;
+      }
+    </style>
+    <script type="text/javascript">
+      var i = 10;
+      do {
+        document.write("hello!!", "<br>");
+      } while(i < 3)
+
+      for (var i = 1; i <= 10; i++) {
+        document.write("loop" + i + "<br>");
+      }
+
+      for (var i = 1; i <= 100; i++) {
+        if (i % 5 == 0 && i % 7 != 0) {
+          document.write("<p class='red'>" + i + "</p>");
+        }
+        else if (i % 7 == 0 && i % 5 != 0) {
+          document.write("<p class='green'>" + i + "</p>");
+        }
+        else if (i % 7 == 0 && i % 5 == 0) {
+          document.write("<p class='aqua'>" + i + "</p>");
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
