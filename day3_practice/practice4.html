@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice4</title>
+    <script>
+      document.write("<h1>computer check rock scissor paper</h1>");
+
+      var game = prompt("choice rock, scissor, paper : ", "scissor");
+      var gameNum;
+      switch(game) {
+        case "scissor":
+          gameNum = 1; break;
+        case "rock":
+          gameNum = 2; break;
+        case "paper":
+          gameNum = 3; break;
+        default: alert("wrong input");
+          location.reload();
+      }
+
+      var com = Math.ceil(Math.random() * 3);
+
+      // not exist image, only draw check
+      if (gameNum == com) {
+        document.write("draw");
+      }
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

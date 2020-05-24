@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice3</title>
+    <script>
+      var num = 2.1234;
+
+      var maxNum = Math.max(10, 5, 8, 30);
+      var minNum = Math.min(10, 5, 8, 30);
+      var roundNum = Math.round(num);
+      var floorNum = Math.floor(num);
+      var ceilNum = Math.ceil(num);
+      var rndNum = Math.random();
+      var piNum = Math.PI;
+      var today = new Date();
+      document.write(maxNum, "<br>");
+      document.write(minNum, "<br>");
+      document.write(roundNum, "<br>");
+      document.write(floorNum, "<br>");
+      document.write(ceilNum, "<br>");
+      document.write(rndNum, "<br>");
+      document.write(piNum, "<br>");
+      
+      var nowYear = today.getFullYear();
+
+      var theDate = new Date(nowYear, 11, 31);
+      var diffDate = theDate.getTime() - today.getTime();
+
+      var result = Math.ceil(diffDate / (60 * 1000 * 60 * 24));
+      document.write("the end of year D-day : " + result + "days left", "<br>");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
