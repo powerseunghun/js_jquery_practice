@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice10</title>
+    <script>
+      function CheckWeight(name, height, weight) {
+        this.userName = name;
+        this.userHeight = height;
+        this.userWeight = weight;
+        this.minWeight;
+        this.maxWeight;
+        this.getInfo = function() {
+          var str = "";
+          str += "name: " + this.userName + ", ";
+          str += "height: " + this.userHeight + ", ";
+          str += "weight: " + this.userWeight + "<br>";
+          return str;
+        }
+        this.getResult = function() {
+          this.minWeight = (this.userHeight - 100) * 0.9 - 5;
+          this.maxWeight = (this.userHeight - 100) * 0.9 + 5;
+
+          if (this.userWeight >= this.minWeight
+          && this.userWeight <= this.maxWeight) {
+            return "normal Weight!";
+          }
+          else if(this.userWeight < this.minWeight) {
+            return "less than normal Weight!";
+          }
+          else {
+            return "over than normal Weight!";
+          }
+        }
+      }
+
+      var jang = new CheckWeight("jangbori", 168, 62);
+      var park = new CheckWeight("parkdaljae", 180, 88);
+      console.log(jang);
+      console.log(park);
+
+      document.write(jang.getInfo());
+      document.write(jang.getResult());
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

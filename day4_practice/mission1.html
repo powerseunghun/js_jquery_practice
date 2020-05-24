@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>mission1</title>
+    <script>
+      function change_color() {
+        var colors = ["#ff0", "#6c0", "#fcf", "#cf0", "#39f"];
+        var color = Math.floor(Math.random() * 5);
+        var bodyTag = document.getElementById("bodyTag");
+        bodyTag.style.backgroundColor = colors[color];
+        //console.log(color);
+      }
+    </script>
+  </head>
+  <body id="bodyTag">
+    <button onclick="change_color();">change_color</button>
+  </body>
+</html>

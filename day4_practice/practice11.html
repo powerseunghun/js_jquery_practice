@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice11</title>
+    <script>
+      function CheckWeight(name, height, weight) {
+        this.userName = name;
+        this.userHeight = height;
+        this.userWeight = weight;
+        this.minWeight;
+        this.maxWeight;
+      }
+      CheckWeight.prototype.getInfo = function () {
+        var str = "";
+        str += "name : " + this.userName + ", ";
+        str += "height : " + this.userHeight + ", ";
+        str += "weight : " + this.userWeight + "<br>";
+        return str;
+      };
+      CheckWeight.prototype.getResult = function () {
+        this.minWeight = (this.userHeight - 100) * 0.9 - 5;
+        this.maxWeight = (this.userHeight - 100) * 0.9 + 5;
+
+        if (this.userWeight >= this.minWeight
+        && this.userWeight <= this.maxWeight) {
+            return "normal weight!";
+        }
+        else if(this.userWeight < this.minWeight) {
+          return "less than normal weight!";
+        }
+        else {
+          return "over than normal weight!";
+        }
+      };
+      var jang = new CheckWeight("jangbori", 168, 62);
+      var park = new CheckWeight("parkdaljae", 180, 88);
+
+      console.log(jang);
+      console.log(park);
+
+      document.write(jang.getInfo());
+      document.write(jang.getResult(), "<br>");
+
+      document.write(park.getInfo());
+      document.write(park.getResult(), "<br>");
+
+      // return value true.
+      // it means two object use same function. (prototype)
+      document.write(jang.getResult === park.getResult);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
