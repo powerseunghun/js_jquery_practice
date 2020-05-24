@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice4</title>
+    <script>
+      var rightId = "korea";
+      var rightPw = "1234";
+
+      function login(id, pw) {
+        if (id == rightId) {
+          if (pw == rightPw) {
+            document.write(id + ". Welcome!");
+          }
+          else {
+            alert("wrong password");
+          }
+        }
+        else {
+          alert("don't exist id");
+        }
+      }
+      var id = prompt("input ID");
+      var pw = prompt("input PW");
+      login(id, pw);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

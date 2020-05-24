@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice5</title>
+    <script>
+      function testAvg(arrData) {
+        var sum = 0;
+        for (var i =0; i < arrData.length; i++) {
+          sum += Number(prompt(arrData[i] + " scores?", "0"));
+        }
+
+        var avg = sum / arrData.length;
+        return avg;
+      }
+
+      var arrSubject = ["kor", "mat"];
+      var result = testAvg(arrSubject);
+
+      document.write("your avg score is " + result + ".", "<br>");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
