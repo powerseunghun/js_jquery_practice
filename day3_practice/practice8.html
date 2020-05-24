@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice8</title>
+    <script>
+      var userName = prompt("What's your name?");
+
+      var upperName = userName.toUpperCase();
+      document.write(upperName, "<br>");
+
+      var userNum = prompt("What's your phone number?");
+      var result = userNum.substring(0, userNum.length-4) + "****";
+      document.write(result, "<br>");
+
+      var userEmail = prompt("What's your email address?");
+      var arrUrl = [".co.kr", ".com", ".net", ".or.kr", ".go.kr"];
+
+      var check1 = false;
+      var check2 = false;
+
+      if (userEmail.indexOf("@") > 0) {
+        check1 = true;
+      }
+      for (var i = 0; i < arrUrl.length; i++) {
+        if (userEmail.indexOf(arrUrl[i]) > 0) {
+          check2 = true;
+        }
+      }
+      if (check1 && check2) {
+        document.write(userEmail);
+      }
+      else {
+        alert("Wrong format email");
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

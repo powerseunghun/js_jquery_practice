@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>test1</title>
+    <script>
+      var info = navigator.userAgent.toLowerCase();
+      var oslmg = null;
+
+      if (info.indexOf('windows') >= 0) {
+        oslmg = "windows.png";
+      }
+      else if (info.indexOf('macintosh') >= 0) {
+        oslmg = "macintosh.png";
+      }
+      else if (info.indexOf('iphone') >= 0) {
+        oslmg = "iphone.png";
+      }
+      else if (info.indexOf('android') >= 0) {
+        oslmg = "android.png";
+      }
+      // document.write("<img src=\"images/" + oslmg + "\">, "<br>");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
