@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>practice10</title>
+    <title>practice13</title>
     <script src="../jquery.js"></script>
     <script>
       $(function(){
@@ -11,25 +11,20 @@
           "border":"2px solid #f00"
         }
 
-        var style_2 = {
-          "background-color":"#ff0",
-          "border":"2px dashed #f00"
-        }
-
-        $(".txt").prev().css(style_1);
-        $(".txt + p").css(style_2);
-        $(".txt").next().next().css(style_2);
-
+        $(".txt3").prevUntil(".title").css(style_1);
+        $(".txt3").nextUntil(".txt6").css(style_1);
       });
     </script>
   </head>
   <body>
     <div id="wrap">
-      <h1>adjacent relationship selector</h1>
+      <h1 class="title">selector</h1>
       <p>content1</p>
-      <p class="txt">content2</p>
-      <p>content3</p>
+      <p>content2</p>
+      <p class="txt3">content3</p>
       <p>content4</p>
+      <p>content5</p>
+      <p class="txt6">content6</p>
     </div>
   </body>
 </html>

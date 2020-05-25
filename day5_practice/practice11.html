@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>practice10</title>
+    <title>practice11</title>
     <script src="../jquery.js"></script>
     <script>
       $(function(){
@@ -16,10 +16,8 @@
           "border":"2px dashed #f00"
         }
 
-        $(".txt").prev().css(style_1);
-        $(".txt + p").css(style_2);
-        $(".txt").next().next().css(style_2);
-
+        $(".txt").prevAll().css(style_1);
+        $(".txt").nextAll().css(style_2);
       });
     </script>
   </head>
