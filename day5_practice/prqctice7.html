@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice7</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function() {
+        $("#list_1").parent()
+        .css("border", "2px solid red");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>adjacent selector</h1>
+    <ul id="wrap">
+      <li>list1
+        <ul>
+          <li id="list_1">list1-1</li>
+          <li>list1-2</li>
+        </ul>
+      </li>
+      <li>list2</li>
+      <li>list3</li>
+</html>
