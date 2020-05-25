@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice18</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#menu li").eq(2)
+        .css({
+          "background-color":"#ff0"
+        });
+
+        $("#menu li:lt(2)")
+        .css({
+          "background-color":"#0ff"
+        });
+
+        $("#menu li:gt(2)")
+        .css({
+          "background-color":"#f0f"
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>search selector</h1>
+    <ul id="menu">
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+    </ul>
+  </body>
+</html>

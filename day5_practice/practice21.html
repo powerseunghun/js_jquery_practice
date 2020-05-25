@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice21</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#menu1 li").slice(1, 3)
+        .css({
+          "background-color":"#ff0"
+        });
+
+        $("li:only-child")
+        .css({
+          "background-color":"#0ff"
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>search selector</h1>
+    <ul id="menu1">
+      <li>list1-1</li>
+      <li>list1-2</li>
+      <li>list1-3</li>
+      <li>list1-4</li>
+    </ul>
+    <ul id="menu2">
+      <li>list2-1</li>
+    </ul>
+  </body>
+</html>

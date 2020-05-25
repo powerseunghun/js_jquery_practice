@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice22</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        var obj = [
+        {"area" : "seoul"},
+        {"area" : "busan"},
+        {"area" : "junjoo"}
+        ]
+
+        $(obj).each(function(i, o) {
+          console.log(i + ":", o);
+        });
+        console.log("====The End1====");
+
+        $.each($("#menu2 li"), function(i, o) {
+          console.log(i + ":", o);
+        });
+        console.log("====The End2====");
+
+        $.each($("#menu2 li"), function(i) {
+          console.log(i + ":",$(this));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>search selector</h1>
+    <ul id="menu1">
+      <li>list1-1</li>
+      <li>list1-2</li>
+      <li>list1-3</li>
+      <li>list1-4</li>
+    </ul>
+    <ul id="menu2">
+      <li>list2-1</li>
+      <li>list2-2</li>
+      <li>list2-3</li>
+      <li>list2-4</li>
+    </ul>
+  </body>
+</html>
