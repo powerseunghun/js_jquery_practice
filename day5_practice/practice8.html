@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice8</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#wrap h1")
+        .css({
+          "background-color":"yellow",
+          "border":"2px dashed #f00"
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>adjacent relationship selector</h1>
+      <p>content1</p>
+      <section>
+        <h1>sub-element selector</h1>
+        <p>content2</p>
+      </section>
+    </div>
+  </body>
+</html>
