@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice27</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#wrap p:hidden").css({
+          "display":"block",
+          "background":"#ff0"
+        });
+
+        var z1 = $("#zone1 :selected").val;
+        console.log(z1);
+
+        var z2 = $("#zone2 :checked").val;
+        console.log(z2);
+
+        var z3 = $("#zone3 :checked").val;
+        console.log(z3);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <p>content1</p>
+      <p style="display:none">content2</p>
+      <p>content3</p>
+    </div>
+    <form action="#">
+      <p id="zone1">
+        <select name="course" id="course">
+          <option value="opt1">option1</option>
+          <option value="opt2">option2</option>
+          <option value="opt3">option3</option>
+        </select>
+      </p>
+      <p id="zone2">
+        <input type="checkbox" name="hobby1" value="reading">reading
+        <input type="checkbox" name="hobby2" value="bicycle">bicycle
+        <input type="checkbox" name="hobby3" value="mountain">mountain
+      </p>
+      <p id="zone3">
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female" checked="checked">female
+      </p>
+    </form>
+  </body>
+</html>

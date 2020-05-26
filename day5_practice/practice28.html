@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice27</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#inner_1 p:contains(content1)").css({"background-color":"#ff0"});
+        $("#inner_1 p:has(strong)").css({"background-color":"#0ff"});
+        $("#outer_wrap").contents().css({"border":"1px dashed #00f"});
+        $("#inner_2 p").not(":first").css({"background-color":"#0f0"});
+        $("#inner_2 p").eq(2).end().css({"color":"#f00"});
+      });
+    </script>
+  </head>
+  <body>
+    <div id="outer_wrap">
+      <h1>content search selector<h1/>
+      <section id="inner_1">
+        <h1>contains(), contents(), has()</h1>
+        <p>
+          <span>content1</span>
+        </p>
+        <p>
+          <strong>content2</strong>
+        </p>
+        <p>
+          <span>content3</span>
+        </p>
+      </section>
+      <section id="inner_2">
+        <h1>not(), end()</h1>
+        <p>content4</p>
+        <p>content5</p>
+        <p>content6</p>
+      </section>
+    </div>
+  </body>
+</html>
