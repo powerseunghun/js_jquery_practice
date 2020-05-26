@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice24</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        var arr1 = ["seoul", "daejeon", "busan", "jeonju"];
+        var arr2 = ["korea", "usa", "japan", "china"];
+
+        var obj = {
+          "name":"jung",
+          "area":"seoul"
+        }
+
+        var idxNum = $.inArray("busan", arr1);
+        console.log(idxNum);
+
+        var okArray1 = $.isArray(arr1);
+        var okArray2 = $.isArray(obj);
+        console.log(okArray1);
+        console.log(okArray2);
+
+        $.merge(arr2, arr1);
+        console.log(arr2);
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

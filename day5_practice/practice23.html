@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practic23</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        var arr1 = [
+        {"area":"seoul", "name":"muemployee"},
+        {"area":"busan", "name":"hongemployee"},
+        {"area":"daejeon", "name":"parkemployee"},
+        {"area":"seoul", "name":"bigmama"}
+        ]
+
+        var arr2 = $.map(arr1, function(a, b){
+          if (a.area == "seoul") {
+            return a;
+          }
+        });
+        console.log(arr2);
+        console.log("=== first End ===");
+
+        var arr3 = $.grep(arr1, function(a, b){
+          if (a.area == "seoul") {
+            return true;
+          }
+          else {
+            return false;
+          }
+        });
+        console.log(arr3);
+        console.log("=== second End ===");
+      });
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
