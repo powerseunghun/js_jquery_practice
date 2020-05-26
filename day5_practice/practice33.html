@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .aqua{ background-color: #0ff;}
+      .red{ background-color: #f00;}
+      .green{ background-color: #0f0; }
+      .yellow{ background-color: #ff0; }
+    </style>
+    <meta charset="utf-8">
+    <title>practice33</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#p1").addClass("aqua");
+        $("#p2").removeClass("red");
+        $("#p3").toggleClass("green");
+        $("#p4").toggleClass("green");
+        $("#p6").text($("#p5").hasClass("yellow"));
+      })
+    </script>
+  </head>
+  <body>
+    <p id="p1">content1</p>
+    <p id="p2" class="red">content2</p>
+    <p id="p3">content3</p>
+    <p id="p4" class="green">content4</p>
+    <p id="p5" class="yellow">content5</p>
+    <p id="p6"></p>
+  </body>
+</html>

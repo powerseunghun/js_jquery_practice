@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice32</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        var srcVal = $("#sec_1 img").attr("src");
+        console.log(srcVal);
+
+        $("#sec_1 img")
+        .attr({
+          "width":"200",
+          "src":srcVal.replace("1.jpg", "2.jpg"),
+          "alt":"background2"
+        })
+        .removeAttr("border");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>
+      <strong>object manipulation and creation</strong>
+    </h1>
+    <section id="sec_1">
+      <h2>image attribute</h2>
+      <p>
+        <img src="images/pic_1.jpg" alt="background" border="2">
+      </p>
+    </section>
+  </body>
+</html>

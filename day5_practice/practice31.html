@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice31</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        var result_1 = $("#sec_1").html();
+        console.log(result_1);
+        $("#sec_1 p").html("<a href=\"#\">Text1</a>");
+
+        var result_2 = $("#sec_2").text();
+        console.log(result_2);
+        $("#sec_2 h2").text("text!()");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>
+      <strong>object manipulation and creation</strong>
+    </h1>
+    <section id="sec_1">
+      <h2>
+        <em>html()</em>
+      </h2>
+      <p>content1</p>
+    </section>
+    <section id="sec_2">
+      <h2>
+        <em>text()</em>
+      </h2>
+      <p>content2</p>
+    </section>
+  </body>
+</html>
