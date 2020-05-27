@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>mission1</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#myList li:not(:eq(0))").css({
+          "background-color":"yellow"
+        });
+  //    $("#myList li:not(:first)").css({
+  //      "background-color":"yellow"
+  //    });
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="myList">
+      <li>content1</li>
+      <li>content2</li>
+      <li>content3</li>
+      <li>content4</li>
+    </ul>
+  </body>
+</html>
