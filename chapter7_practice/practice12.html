@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice12</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $("#rel_site").on("change", function(){
+          $(".txt").text($(this).val());
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <select id="rel_site">
+      <option value="">site choice</option>
+      <option value="www.google.com">google</option>
+      <option value="www.naver.com">naver</option>
+      <option value="www.daum.net">daum</option>
+    </select>
+    <p class="txt"></p>
+  </body>
+</html>
