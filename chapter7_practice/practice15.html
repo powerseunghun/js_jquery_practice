@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice14</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $(".btn_1.on").on("mouseover focus", function(){
+          alert("HELLO!");
+        });
+        $(".btn_1").addClass("on");
+
+        $(document).on("mouseover focus", ".btn_2.on", function(e){
+            alert("WELCOME!");
+        });
+        $(".btn_2").addClass("on");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <p><button class="btn_1">button1</button></p>
+      <p><button class="btn_2">button2</button></p>
+    </div>
+  </body>
+</html>

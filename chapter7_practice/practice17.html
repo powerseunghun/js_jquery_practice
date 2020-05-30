@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice17</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function(){
+        $(".btn_1").on("mouseover", function() {
+          alert("HELLO!");
+        });
+        $(document).on("mouseover", ".btn_2", function(){
+          alert("WELCOME!");
+        });
+
+        var btn_2 = $("<p><button class=\"btn_2\">button2</button></p>");
+        $("#wrap").append(btn_2);
+
+        $(".del_1").on("click", function(){
+          $(".btn_1").off("mouseover");
+        });
+
+        $(".del_2").on("click", function() {
+          $(document).off("mouseover", ".btn_2");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <p><button class="btn_1">button1</button></p>
+    </div>
+    <p>
+      <p><button class="del_1">button1 event off</button></p>
+      <p><button class="del_2">button2 event off</button></p>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>practice16</title>
+    <script src="../jquery.js"></script>
+    <script>
+      var beforeMenu = null;
+      $(function(){
+        $(".gnb a").on("mouseover focus", function(){
+          if(beforeMenu) beforeMenu.css({background:"none"});
+          $(this).css({"background-color":"#0ff"});
+          beforeMenu = $(this);
+        });
+
+        $(".gnb").on("mouseleave", function(){
+          if(beforeMenu) beforeMenu.css({background:"none"});
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ul class="gnb">
+      <button><a href="#">menu1</a></button>
+      <button><a href="#">menu2</a></button>
+      <button><a href="#">menu3</a></button>
+      <button><a href="#">menu4</a></button>
+    </ul>
+  </body>
+</html>
